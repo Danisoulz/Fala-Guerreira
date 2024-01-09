@@ -1,0 +1,143 @@
+:root {
+  --vermelho-principal: #dd0404;
+  --preto-principal: #000000;
+  --branco-principal: #ffff;
+  --fonte-principal: "Inter", sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.cabecalho_menu {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  margin-left: 10px;
+  color: var(--preto-principal);
+  background-color:var(--branco-principal);
+        
+}
+.menu {
+  margin-left: 20%;
+  align-items: center;
+  display: flex;
+}
+
+.cabecalho_link {
+  color: var(--preto-principal);
+  text-decoration: none;
+  padding: 2em;
+  font-size: 25px;
+  
+}
+
+.cabecalho_link:hover {
+  font-size: 1.2em;
+  height: 5px;
+  transition: 0.5s;
+
+}
+
+#containerMenu {
+  width: auto;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+}
+
+#logo {
+  width: 260px;
+  height: 130px;
+  border: solid 1px var(--preto-principal);
+  float: left;
+  margin: 20px;
+  background-image: url(../imgs/logofalaguerreira.png);
+  background-repeat: no-repeat;
+}
+
+.bodyHome {
+   height: 100vh;
+  background-color: var(--preto-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#slideHome img{
+  width: 700px ;
+  height: 700px ;
+}
+
+ #slideHome { 
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+} 
+
+figure {
+  width: 600px;
+  margin-left: 100px;
+  margin-right: 100px;
+  float: left;
+  justify-content: center;
+}
+
+figure img {
+  width: 150%;
+  height: 150%;
+  display: flex;
+  align-content: center;
+  border-radius: 10px;
+  float: left;
+  margin-left: 90%;
+
+}
+
+#previous,
+#next {
+  position: absolute;
+  width: 35px;
+  height: 300px;
+  z-index: 970;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 3.2em;
+  float: left;
+  margin-top: 350px;
+  color: var(--vermelho-principal);
+}
+
+#previous {
+  margin-left: 80px;
+}
+
+#next {
+  margin-left: 1800px;
+}
+
+#previous:hover,
+#next:hover {
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.rodape {
+  background: white;
+  justify-content: space-around;
+  height: 20%;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio1:checked ~ .first {
+  margin-left: -25%;
+} 
